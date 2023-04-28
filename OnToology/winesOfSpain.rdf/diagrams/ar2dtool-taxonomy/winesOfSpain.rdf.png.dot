@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "winesOfSpain:Light" "winesOfSpain:Year" "winesOfSpain:Sweet" "winesOfSpain:Taste" "winesOfSpain:Acid" "winesOfSpain:Cheap" "winesOfSpain:Type" "winesOfSpain:Excellent" "winesOfSpain:Winery" "winesOfSpain:Fair" "winesOfSpain:Expensive" "winesOfSpain:Rating" "winesOfSpain:Medium" "winesOfSpain:Wine" "winesOfSpain:Heavy" "winesOfSpain:Average" "winesOfSpain:Price" "winesOfSpain:Region" "winesOfSpain:Body" "winesOfSpain:Good" ; /*classes style*/
+	"winesOfSpain:Taste" -> "winesOfSpain:Wine" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Rating" -> "winesOfSpain:Wine" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Winery" -> "winesOfSpain:Region" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Medium" -> "winesOfSpain:Body" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Average" -> "winesOfSpain:Price" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Type" -> "winesOfSpain:Wine" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Good" -> "winesOfSpain:Rating" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Expensive" -> "winesOfSpain:Price" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Acid" -> "winesOfSpain:Taste" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Body" -> "winesOfSpain:Wine" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Cheap" -> "winesOfSpain:Price" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Light" -> "winesOfSpain:Body" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Year" -> "winesOfSpain:Wine" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Fair" -> "winesOfSpain:Rating" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Excellent" -> "winesOfSpain:Rating" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Heavy" -> "winesOfSpain:Body" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Sweet" -> "winesOfSpain:Taste" [ label = "rdfs:subClassOf" ];
+	"winesOfSpain:Price" -> "winesOfSpain:Wine" [ label = "rdfs:subClassOf" ];
+
+}
